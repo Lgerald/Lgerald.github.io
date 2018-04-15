@@ -16,6 +16,7 @@ p {
 
 h1 {
   font-size: 3em;
+  align-items: center;
 }
 
 h2 {
@@ -106,20 +107,6 @@ header nav {
   font-weight: bold;
 }
 
-.nav-item a {
-  font-size: 1.3em;
-  color: #fff;
-  text-decoration: none;
-  padding: 5px;
-  border-radius: 5px;
-  transition: all 0.10s ease-in;
-}
-.nav-item a:hover {
-  color: #202b47;
-  background-color: #fff;
-  box-shadow: #d3d3d3;
-}
-
 /* Basic Flex Constructs */
 
 .flex {
@@ -151,20 +138,11 @@ section {
   width: 100vw;
   overflow: hidden;
 }
-section h2 {
+
+section h1 {
   text-align: center;
   position: relative;
   margin: 80px 0 40px 0;
-}
-section h2:after {
-  content: "";
-  position: absolute;
-  bottom: -20px;
-  width: 60px;
-  height: 1px;
-  background-color: #f39c12;
-  left: 50%;
-  margin-left: -30px;
 }
 
 #about {
@@ -173,7 +151,6 @@ section h2:after {
   padding: 20px 20px 0 20px;
   
 }
-
 
 #about p {
   flex: 3.5;
@@ -196,7 +173,6 @@ section h2:after {
 }
 #Projects .wrap {
   display: flex;
-
   flex-wrap: wrap;
 }
 #Projects .Projects-profile {
@@ -259,13 +235,6 @@ section h2:after {
   width:100%;
 
 }
-footer:hover {
-  transform: translateY(0em);
-}
-
-footer.active {
-  transform: translateY(5em);
-}
 
 #social {
   margin: 0 10px;
@@ -276,9 +245,6 @@ footer.active {
   margin: 0 10px;
   text-decoration: none;
 
-}
-#social a:visited{
-  color: white;
 }
 
 .Projects-profile a {
@@ -301,7 +267,4 @@ footer.active {
   text-decoration: none;
   color: white;
   margin: 0 20px;
-}
-.contact-info a:visited{
-  color: white;
 }
