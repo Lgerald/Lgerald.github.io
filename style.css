@@ -262,6 +262,11 @@ section h1 {
   margin: 0 10px;
   color: white;
 }
+.contact-info a:hover {
+    transform: scale(1.1, 1.1);
+    transition: all 0.5s;
+    color: turquoise;
+}
 
 .contact-info a{
   text-decoration: none;
