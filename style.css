@@ -1,5 +1,4 @@
 /* Defaults */
-
 * {
   box-sizing: border-box;
 }
@@ -26,14 +25,11 @@ h2 {
 
 h1,
 h2,
-h3,
-nav {
+h3 {
   font-family: 'avenir next', helvetica, arial, sans-serif;
 }
 
-
 /* Responsive images */
-
 #profile {
   max-width: 40%;
   max-height: 40%;
@@ -47,76 +43,13 @@ img {
   
 }
 
-/* Header logo/hiding menu */
-
-#start-logo {
-  position: absolute;
-  width: 14em;
-  top: 65px;
-  left: calc(50% - 7em);
-  z-index: 1;
-}
-
-header {
-  display: flex;
-  position: fixed;
-  justify-content: space-between;
-  margin: 0 4em;
-  padding: 20px;
-  width: calc(100vw - 8em);
-  color: #fff;
-  background-color: rgba(37, 37, 37, 0.8);
-  border-radius: 0 0 1em 1em;
-  z-index: 2;
-  transition: all 0.5s ease-in;
-}
-
-header:hover {
-  transform: translateY(0em);
-}
-
-header.active {
-  transform: translateY(-5em);
-}
-
-
-header .logo {
-  padding: 0.25em 0 0 0.50em;
-  display: flex;
-  align-items: center;
-  
-}
-header .logo img {
-  flex-shrink: 0;
-}
-header nav {
-  display: flex;
-}
-
-.nav-item {
-  height: 1.5em;
-  margin: .6em 1.5em 0 0;
-}
-
-.my-name {
-  font-size: 2.5em;
-  color: #fff;
-  text-decoration: none;
-  border-radius: 5px;
-  font-family: Oswald,arial,sans-serif;
-  font-weight: bold;
-}
-
 /* Basic Flex Constructs */
-
 .flex {
   display: flex;
   align-items: center;
   flex-direction: column;
   padding: 10px;
 }
-
-
 
 @media screen and (max-width: 600px) {
   .flex {
@@ -145,6 +78,7 @@ section h1 {
   margin: 80px 0 40px 0;
 }
 
+/* About Section */
 #about {
   background-color: #f1f1f1;
   display: flex;
@@ -155,11 +89,7 @@ section h1 {
 #about p {
   flex: 3.5;
 }
-#about #aboutmockup {
-  flex: 2;
-  align-self: center;
-  padding: 0 0 0 15px
-}
+
 
 #about img {
   display: block;
@@ -167,6 +97,7 @@ section h1 {
   height: auto;
 }
 
+/* Projects section */
 #Projects {
   height: 100%;
   color: #252525;
@@ -215,11 +146,11 @@ section h1 {
   text-align: center;
   font-style: italic;
 }
-#contact {
-  display:flex;
-  flex-direction: column;
+.Projects-profile a {
+  color: black;
 }
 
+/* Footer Section */
 .footer {
   display: flex;
   justify-content: center;
@@ -234,25 +165,6 @@ section h1 {
   bottom:0px;
   width:100%;
 
-}
-
-#social {
-  margin: 0 10px;
-}
-
-#social a {
-  color: white;
-  margin: 0 10px;
-  text-decoration: none;
-
-}
-
-.Projects-profile a {
-  color: black;
-}
-
-.Projects-profile a:visited {
-  color: black;
 }
 
 .contact-info {
